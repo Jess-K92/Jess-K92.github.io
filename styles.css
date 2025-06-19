@@ -14,31 +14,16 @@
      box-sizing: inherit;
  }
 
- h1,
- h2,
- h3,
- h4,
- h5,
- h6 {
+ h1, h2, h3, h4, h5, h6 {
      font-family: var(--font-feature);
  }
 
- body,
- h1,
- h2,
- h3,
- h4,
- h5,
- h6,
- p,
- ol,
- ul {
+ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
      margin: 0;
      padding: 0;
  }
 
- ol,
- ul {
+ ol, ul {
      list-style: none;
      ;
  }
@@ -48,11 +33,239 @@
      height: auto;
  }
 
- input,
- button,
- textarea,
- select {
+ input, button, textarea, select {
      font: inherit;
  }
 
  /* ---End CSS Reset --- */ 
+
+ @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --brand: #0800F0;
+  --brand-alt: #464FF4;
+  --base-lightest: #D8E8FD;
+  --base-lighter: #C9DAFE;
+  --base-light: #B9CBFE;
+  --base-mid: #99ADFF;
+  --base-dark: #8F9CF9;
+  --base-darker: #4C599D;
+  --base-darkest: #091540;
+/*  inherited colors  */
+  --text: var(--base-dark);
+}
+
+/* set default font style here */
+html, body {
+  font-family: "Space Mono", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+/* font space mono css classes from google fonts */
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Add Heading styles here  */
+h1 {
+  font-family: "Space Mono", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+h2 {
+
+}
+h3 {
+
+}
+h4 {
+
+}
+h5{
+
+}
+h6{
+
+}
+
+
+
+/* style to make style guide */
+body {
+  padding: 20px;
+}
+.colors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.colors div {
+  width: 100px;
+  height: 100px;
+}
+
+.brand {
+  background-color: var(--brand);
+}
+.brand-alt {
+  background-color: var(--brand-alt);
+}
+.base-darkest {
+  background-color: var(--base-darkest);
+}
+.base-darker {
+  background-color: var(--base-darker);
+}
+.base-dark {
+  background-color: var(--base-dark);
+}
+.base-mid {
+  background-color: var(--base-mid);
+}
+.base-light {
+  background-color: var(--base-light);
+}
+.base-lighter {
+  background-color: var(--base-lighter);
+}
+.base-lightest {
+  background-color: var(--base-lightest);
+}
+
+/* Layout Containers */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: var(--base-darker);
+  padding: 20px 0;
+  color: white;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 50px;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--base-mid);
+}
+
+/* Sections */
+section {
+  margin: 40px 0;
+}
+
+h1, h2 {
+  color: var(--base-darkest);
+  margin-bottom: 20px;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: var(--base-lighter);
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  background-color: var(--base-mid);
+  color: white;
+}
+
+.card i {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid var(--base-dark);
+  border-radius: 4px;
+}
+
+.button {
+  background-color: var(--brand);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--brand-alt);
+}
+
+/* Footer */
+footer {
+  background-color: var(--base-darker);
+  color: white;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer img {
+  width: 30px;
+  margin-left: 10px;
+}

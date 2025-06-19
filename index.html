@@ -1,73 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
-    <!-- CSS style sheet link -->
-    <link rel="stylesheet" href="./styles.css">
-     <!-- Font Aweomse style link -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Profile</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <img src="images/J (3).png" alt="Jessica Keating Logo">
-        <nav>
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
+  <header>
+    <div class="container header-container">
+      <img src="images/jk pic.jpeg" alt="Jessica Keating Profile Picture" class="logo" />
+      <nav>
+        <a href="#About">About</a>
+        <a href="#Skills">Skills</a>
+        <a href="#Projects">Projects</a>
+        <a href="#Contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
+  <main class="container">
+    <section class="about" id="About">
+      <h1>About Me</h1>
+      <p>Hi, I'm Jessica – a creative thinker with a passion for tech, design, and storytelling.</p>
+    </section>
 
-    <main>
-        <section class="Skill">
-            <h2>
-                <div>
-                    <ul>
-                        <li><i class="fa-brands fa-html5"></i></span><span>HTML</span></li>
-                        <li><i class="fa-brands fa-css"></i></span><span>CSS</span></li>
-                        <li><i class="fa-brands fa-github"></i></span><span>GitHub</span></li>
-                    </ul>
-                    <ul>
-                        <li><i> blah<i><span>text</span></li>
-                        <li><i> blah<i><span>text</span></li>
-                        <li><i> blah<i><span>text</span></li>
-                    </ul>
-                </div>
-            </h2>
-        </section>
-        <section class="Projects">
-            <h3>
-                <div>
-                    <ul>
-                        <li><i><img src="images/logo.png" alt="She Codes Logo"><i><span>She Codes First Website</span></li>
-                        <li><i><img src="#" alt="project 2 image"><i><span>text</span></li>
-                        <li><i><img src="#" alt="project 3 image"><i><span>text</span></li>
-                    </ul>
-                </div>
-            </h3>
-        </section>
+    <section class="skills" id="Skills">
+      <h2>My Skills</h2>
+      <div class="grid">
+        <div class="card"><i class="fa-brands fa-html5"></i><p>HTML</p></div>
+        <div class="card"><i class="fa-brands fa-css3-alt"></i><p>CSS</p></div>
+        <div class="card"><i class="fa-brands fa-github"></i><p>GitHub</p></div>
+        <div class="card"><i class="fa-solid fa-pencil"></i><p>Writing</p></div>
+        <div class="card"><i class="fa-solid fa-comments"></i><p>Communication</p></div>
+        <div class="card"><i class="fa-solid fa-users"></i><p>Teamwork</p></div>
+      </div>
+    </section>
 
-    </main>
+    <section class="projects" id="Projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="images/logo.png" alt="She Codes Logo">
+          <p>She Codes First Website</p>
+        </div>
+        <div class="card">
+          <img src="images/briar-archie-image.png" alt="Two Dogs">
+          <p>Project Placeholder</p>
+        </div>
+      </div>
+    </section>
 
+    <section class="contact" id="Contact">
+      <h2>Get in Touch</h2>
+      <form class="contact-form">
+        <label for="your-name">Your Name</label>
+        <input type="text" id="your-name" />
+
+        <label for="city">Your City</label>
+        <select id="city">
+          <option>Brisbane</option>
+          <option>Perth</option>
+          <option>The Moon</option>
+        </select>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" rows="6"></textarea>
+
+        <input type="submit" value="Submit" class="button" />
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 Jessica Keating</p>
+      <div class="socials">
+        <a href="https://github.com/Jess-K92"><img src="images/github.svg" alt="GitHub" /></a>
+        <a href="https://www.linkedin.com/in/jessica-keating/"><img src="images/linkedin-logo.png" alt="LinkedIn" /></a>
+      </div>
+    </div>
+  </footer>
 </body>
-
-
-
-
-<footer>
-     <nav>
-        <ul>
-            <li><a href="#"><img src="images/github.svg" alt="GitHub Logo"></a></li>
-            <li><a href="#"><img src="images/linkedin-logo.png" alt="LinkedIn Logo"></a></li>
-            </ul>
-        </nav>
-</footer>
-
-
 </html>
