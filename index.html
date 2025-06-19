@@ -3,87 +3,107 @@
 
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Profile</title>
-  <link rel="stylesheet" href="./styles.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+</nav>
+
 </head>
 
 <body>
-  <header>
-    <div class="container header-container">
-      <img src="images/jk pic.jpeg" alt="Jessica Keating Profile Picture" class="logo" />
-      <nav>
-        <a href="#About">About</a>
-        <a href="#Skills">Skills</a>
-        <a href="#Projects">Projects</a>
-        <a href="#Contact">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="container">
-    <section class="about" id="About">
-      <h1>About Me</h1>
-      <p>Jessica is a Perth-based creative with a passion for tech, good coffee, and all things organised. With a background in implementation consulting and self-taught skills in SQL and agile project management, she's now transitioning into the tech world through She Codes. Jessica thrives on meaningful work, values purpose-driven progress, and embraces new ways of working that align with her strengths. When she’s not coding, you’ll find her enjoying Pilates, planning her wedding, or spending time with her dog. Driven, curious, and community-minded, Jessica is always up for learning something new and tackling life’s next exciting challenge.</p>
-    </section>
-
-    <section class="skills" id="Skills">
-      <h2>My Skills</h2>
-      <div class="grid">
-        <div class="card"><i class="fa-brands fa-html5"></i><p>HTML</p></div>
-        <div class="card"><i class="fa-brands fa-css3-alt"></i><p>CSS</p></div>
-        <div class="card"><i class="fa-brands fa-github"></i><p>GitHub</p></div>
-        <div class="card"><i class="fa-solid fa-pencil"></i><p>Writing</p></div>
-        <div class="card"><i class="fa-solid fa-comments"></i><p>Communication</p></div>
-        <div class="card"><i class="fa-solid fa-users"></i><p>Teamwork</p></div>
-      </div>
-    </section>
-
-    <section class="projects" id="Projects">
-      <h2>Projects</h2>
-      <div class="grid">
-        <div class="card">
-          <img src="images/logo.png" alt="She Codes Logo">
-          <p>She Codes First Website</p>
+    <header>
+        <div class="container header-container">
+            <img src="images/jk pic.jpeg" alt="Jessica Keating Profile Picture" class="logo" />
+            <nav>
+                <a href="about.html">About</a>
+                <a href="#Skills">Skills</a>
+                <a href="#Projects">Projects</a>
+                <a href="#Contact">Contact</a>
+            </nav>
         </div>
-        <div class="card">
-          <img src="images/briar-archie-image.png" alt="Two Dogs">
-          <p>Project Placeholder</p>
+    </header>
+
+    <main class="container">
+        <section class="about" id="About">
+            <h1>About Me</h1>
+            <p>Jessica is a Perth-based creative with a passion for tech, good coffee, and all things organised. With a
+                background in implementation consulting and self-taught skills in SQL and agile project management,
+                she's now transitioning into the tech world through She Codes. Jessica thrives on meaningful work,
+                values purpose-driven progress, and embraces new ways of working that align with her strengths. When
+                she’s not coding, you’ll find her enjoying Pilates, planning her wedding, or spending time with her dog.
+                Driven, curious, and community-minded, Jessica is always up for learning something new and tackling
+                life’s next exciting challenge.</p>
+        </section>
+
+        <section class="skills" id="Skills">
+            <h2>My Skills</h2>
+            <div class="grid">
+                <div class="card"><i class="fa-brands fa-html5"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="card"><i class="fa-brands fa-css3-alt"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="card"><i class="fa-brands fa-github"></i>
+                    <p>GitHub</p>
+                </div>
+                <div class="card"><i class="fa-solid fa-pencil"></i>
+                    <p>Writing</p>
+                </div>
+                <div class="card"><i class="fa-solid fa-comments"></i>
+                    <p>Communication</p>
+                </div>
+                <div class="card"><i class="fa-solid fa-users"></i>
+                    <p>Teamwork</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="Projects">
+            <h2>Projects</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="images/logo.png" alt="She Codes Logo">
+                    <p>She Codes First Website</p>
+                </div>
+                <div class="card">
+                    <img src="images/briar-archie-image.png" alt="Two Dogs">
+                    <p>Project Placeholder</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="Contact">
+            <h2>Get in Touch</h2>
+            <form action="https://formspree.io/f/xovwlzgo" method="POST" class="contact-form">
+                <input type="hidden" name="_subject" value="New message from portfolio site">
+
+                <label>Your Name:</label><input type="text" name="your-name" required />
+
+                <label> Your email:<input type="email" name="email"></label>
+
+                <label>Your message:<textarea name="message"></textarea></label>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2025 Jessica Keating</p>
+            <div class="socials">
+                <a href="https://github.com/Jess-K92"><img src="images/github.svg" alt="GitHub" /></a>
+                <a href="https://www.linkedin.com/in/jessica-keating/"><img src="images/linkedin-logo.png"
+                        alt="LinkedIn" /></a>
+            </div>
         </div>
-      </div>
-    </section>
-
-    <section class="contact" id="Contact">
-      <h2>Get in Touch</h2>
-      <form class="contact-form">
-        <label for="your-name">Your Name</label>
-        <input type="text" id="your-name" />
-
-        <label for="city">Your City</label>
-        <select id="city">
-          <option>Brisbane</option>
-          <option>Perth</option>
-          <option>The Moon</option>
-        </select>
-
-        <label for="message">Your Message</label>
-        <textarea id="message" rows="6"></textarea>
-
-        <input type="submit" value="Submit" class="button" />
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer-container">
-      <p>&copy; 2025 Jessica Keating</p>
-      <div class="socials">
-        <a href="https://github.com/Jess-K92"><img src="images/github.svg" alt="GitHub" /></a>
-        <a href="https://www.linkedin.com/in/jessica-keating/"><img src="images/linkedin-logo.png" alt="LinkedIn" /></a>
-      </div>
-    </div>
-  </footer>
+    </footer>
 </body>
+
 </html>
