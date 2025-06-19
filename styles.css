@@ -174,7 +174,12 @@ header {
 }
 
 .logo {
-  height: 50px;
+  height: 100px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
 }
 
 nav a {
@@ -223,12 +228,19 @@ h1, h2 {
   margin-bottom: 10px;
 }
 
+.card img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
 /* Contact Form */
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 10px;
   max-width: 400px;
+  margin: 0 auto
 }
 
 .contact-form input,
@@ -268,4 +280,59 @@ footer {
 footer img {
   width: 30px;
   margin-left: 10px;
+}
+
+/* SMALL SCREENS: Phones (up to 600px) */
+@media (max-width: 600px) {
+  header,
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .grid {
+    grid-template-columns: 1fr; /* Stack cards vertically */
+  }
+
+  .logo {
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  body {
+    padding: 10px;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 15px;
+  }
+}
+
+/* MEDIUM SCREENS: Tablets (min 700px) */
+@media (min-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  nav a {
+    margin-left: 10px;
+  }
+
+  .header-container {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
