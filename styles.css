@@ -88,11 +88,11 @@ html, body {
 }
 
 /* Add Heading styles here  */
-h1 {
+/* h1 {
   font-family: "Space Mono", cursive;
   font-weight: 400;
   font-style: normal;
-}
+} */
 h2 {
 
 }
@@ -213,10 +213,32 @@ h1, h2 {
 .card {
   background-color: var(--base-lighter);
   padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px; /* Ensures equal card height */
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card img {
+  width: auto;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+
+/* .card {
+  background-color: var(--base-lighter);
+  padding: 20px;
   text-align: center;
   border-radius: 8px;
   transition: 0.3s;
-}
+} */
 
 .card:hover {
   background-color: var(--base-mid);
@@ -228,11 +250,11 @@ h1, h2 {
   margin-bottom: 10px;
 }
 
-.card img {
+/* .card img {
   width: 80px;
   height: auto;
   margin-bottom: 10px;
-}
+} */
 
 /* Contact Form */
 .contact-form {
@@ -310,7 +332,7 @@ footer img {
   margin-left: 10px;
 }
 
-/* SMALL SCREENS: Phones (up to 600px) */
+/* SMALL SCREENS: Phones (up to 700px) */
 @media (max-width: 600px) {
   header,
   .footer-container {
@@ -326,6 +348,8 @@ footer img {
   .grid {
     grid-template-columns: 1fr; /* Stack cards vertically */
   }
+
+  
 
   
 
@@ -365,4 +389,13 @@ footer img {
     flex-direction: column;
     gap: 10px;
   }
+  .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Always 3 items per row */
+  gap: 20px;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 }
