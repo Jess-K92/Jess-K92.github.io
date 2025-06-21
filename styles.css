@@ -1,90 +1,110 @@
 /* CSS Reset  (Base Styles)*/
 
- html {
-     box-sizing: border-box;
-     font-size: var(--space-medium);
-     font-family: var(--font-default);
-     color: var(--black);
-     scroll-behavior: smooth;
- }
+html {
+    box-sizing: border-box;
+    font-size: var(--space-medium);
+    font-family: var(--font-default);
+    color: var(--black);
+    scroll-behavior: smooth;
+}
 
- *,
- *:before,
- *:after {
-     box-sizing: inherit;
- }
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
 
- h1, h2, h3, h4, h5, h6 {
-     font-family: var(--font-feature);
- }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-feature);
+}
 
- body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-     margin: 0;
-     padding: 0;
- }
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
 
- ol, ul {
-     list-style: none;
-     ;
- }
+ol,
+ul {
+    list-style: none;
+    ;
+}
 
- img {
-     max-width: 100%;
-     height: auto;
- }
+img {
+    max-width: 100%;
+    height: auto;
+}
 
- input, button, textarea, select {
-     font: inherit;
- }
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
 
- /* ---End CSS Reset --- */ 
+/* ---End CSS Reset --- */
 
- @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-  --brand: #0800F0;
-  --brand-alt: #464FF4;
-  --base-lightest: #D8E8FD;
-  --base-lighter: #C9DAFE;
-  --base-light: #B9CBFE;
-  --base-mid: #99ADFF;
-  --base-dark: #8F9CF9;
-  --base-darker: #4C599D;
-  --base-darkest: #091540;
-/*  inherited colors  */
-  --text: var(--base-dark);
+    --brand: #0800F0;
+    --brand-alt: #464FF4;
+    --base-lightest: #D8E8FD;
+    --base-lighter: #C9DAFE;
+    --base-light: #B9CBFE;
+    --base-mid: #99ADFF;
+    --base-dark: #8F9CF9;
+    --base-darker: #4C599D;
+    --base-darkest: #091540;
+    /*  inherited colors  */
+    --text: var(--base-dark);
 }
 
 /* set default font style here */
-html, body {
-  font-family: "Space Mono", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+html,
+body {
+    font-family: "Space Mono", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
+
 /* font space mono css classes from google fonts */
 .space-mono-regular {
-  font-family: "Space Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .space-mono-bold {
-  font-family: "Space Mono", monospace;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .space-mono-regular-italic {
-  font-family: "Space Mono", monospace;
-  font-weight: 400;
-  font-style: italic;
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .space-mono-bold-italic {
-  font-family: "Space Mono", monospace;
-  font-weight: 700;
-  font-style: italic;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: italic;
 }
 
 /* Add Heading styles here  */
@@ -93,142 +113,148 @@ html, body {
   font-weight: 400;
   font-style: normal;
 } */
-h2 {
+h2 {}
 
-}
-h3 {
+h3 {}
 
-}
-h4 {
+h4 {}
 
-}
-h5{
+h5 {}
 
-}
-h6{
-
-}
+h6 {}
 
 
 
 /* style to make style guide */
 body {
-  padding: 20px;
+    padding: 20px;
 }
+
 .colors {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
 .colors div {
-  width: 100px;
-  height: 100px;
+    width: 100px;
+    height: 100px;
 }
 
 .brand {
-  background-color: var(--brand);
+    background-color: var(--brand);
 }
+
 .brand-alt {
-  background-color: var(--brand-alt);
+    background-color: var(--brand-alt);
 }
+
 .base-darkest {
-  background-color: var(--base-darkest);
+    background-color: var(--base-darkest);
 }
+
 .base-darker {
-  background-color: var(--base-darker);
+    background-color: var(--base-darker);
 }
+
 .base-dark {
-  background-color: var(--base-dark);
+    background-color: var(--base-dark);
 }
+
 .base-mid {
-  background-color: var(--base-mid);
+    background-color: var(--base-mid);
 }
+
 .base-light {
-  background-color: var(--base-light);
+    background-color: var(--base-light);
 }
+
 .base-lighter {
-  background-color: var(--base-lighter);
+    background-color: var(--base-lighter);
 }
+
 .base-lightest {
-  background-color: var(--base-lightest);
+    background-color: var(--base-lightest);
 }
 
 /* Layout Containers */
 .container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 /* Header */
 header {
-  background-color: var(--base-darker);
-  padding: 20px 0;
-  color: white;
+    background-color: var(--base-darker);
+    padding: 20px 0;
+    color: white;
 }
 
 .header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
-  height: 100px;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
+    height: 100px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
 }
 
 nav a {
-  color: white;
-  margin-left: 20px;
-  text-decoration: none;
-  font-weight: bold;
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 nav a:hover {
-  color: var(--base-mid);
+    color: var(--base-mid);
 }
 
 /* Sections */
 section {
-  margin: 40px 0;
+    margin: 40px 0;
 }
 
-h1, h2 {
-  color: var(--base-darkest);
-  margin-bottom: 20px;
+h1,
+h2 {
+    color: var(--base-darkest);
+    margin-bottom: 20px;
 }
 
 /* Grid Layout */
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
 }
 
 .card {
-  background-color: var(--base-lighter);
-  padding: 20px;
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100px; /* Ensures equal card height */
-  text-align: center;
-  transition: 0.3s;
+    background-color: var(--base-lighter);
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    /* Ensures equal card height */
+    text-align: center;
+    transition: 0.3s;
 }
 
 .card img {
-  width: auto;
-  height: 100px;
-  object-fit: cover;
-  margin-bottom: 15px;
-  border-radius: 8px;
+    width: auto;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 8px;
 }
 
 
@@ -241,13 +267,13 @@ h1, h2 {
 } */
 
 .card:hover {
-  background-color: var(--base-mid);
-  color: white;
+    background-color: var(--base-mid);
+    color: white;
 }
 
 .card i {
-  font-size: 2em;
-  margin-bottom: 10px;
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
 /* .card img {
@@ -258,144 +284,146 @@ h1, h2 {
 
 /* Contact Form */
 .contact-form {
- display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: var(--base-lightest);
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--base-lightest);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
-  padding: 10px;
-  border: 1px solid var(--base-dark);
-  border-radius: 4px;
+    padding: 10px;
+    border: 1px solid var(--base-dark);
+    border-radius: 4px;
 }
 
 .contact-form input,
 .contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid var(--base-dark);
-  border-radius: 5px;
-  font-size: 1rem;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--base-dark);
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
 .contact-form button {
-  background-color: var(--brand);
-  color: white;
-  border: none;
-  padding: 12px;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    background-color: var(--brand);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
-  background-color: var(--brand-alt);
+    background-color: var(--brand-alt);
 }
 
 .button {
-  background-color: var(--brand);
-  color: white;
-  border: none;
-  padding: 12px;
-  border-radius: 4px;
-  cursor: pointer;
+    background-color: var(--brand);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .button:hover {
-  background-color: var(--brand-alt);
+    background-color: var(--brand-alt);
 }
 
 /* Footer */
 footer {
-  background-color: var(--base-darker);
-  color: white;
-  padding: 20px 0;
+    background-color: var(--base-darker);
+    color: white;
+    padding: 20px 0;
 }
 
 .footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer img {
-  width: 30px;
-  margin-left: 10px;
+    width: 30px;
+    margin-left: 10px;
 }
 
 /* SMALL SCREENS: Phones (up to 700px) */
 @media (max-width: 600px) {
-  header,
-  .footer-container {
-    flex-direction: column;
-    text-align: center;
-  }
 
-  nav a {
-    display: block;
-    margin: 10px 0;
-  }
+    header,
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
 
-  .grid {
-    grid-template-columns: 1fr; /* Stack cards vertically */
-  }
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
 
-  
+    .grid {
+        grid-template-columns: 1fr;
+        /* Stack cards vertically */
+    }
 
-  
 
-  /* .logo {
+    /* .logo {
     height: 40px;
     margin-bottom: 10px;
   } */
 
-  .contact-form {
-    width: 100%;
-  }
+    .contact-form {
+        width: 100%;
+    }
 
-  body {
-    padding: 10px;
-  }
+    body {
+        padding: 10px;
+    }
 
-  h1, h2 {
-    font-size: 1.5rem;
-  }
+    h1,
+    h2 {
+        font-size: 1.5rem;
+    }
 
-  .card {
-    padding: 15px;
-  }
+    .card {
+        padding: 15px;
+    }
 }
 
 /* MEDIUM SCREENS: Tablets (min 700px) */
 @media (min-width: 700px) {
-  .grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
 
-  nav a {
-    margin-left: 10px;
-  }
+    nav a {
+        margin-left: 10px;
+    }
 
-  .header-container {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Always 3 items per row */
-  gap: 20px;
-  justify-content: center;
-  max-width: 1000px;
-  margin: 0 auto;
-}
+    .header-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* Always 3 items per row */
+        gap: 20px;
+        justify-content: center;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
 
 }
