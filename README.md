@@ -60,4 +60,3 @@ I included hover state on the Skills and Project cards on the Home page and also
 ![Mobile screenshot about me 1](site-images/mobile-screenshot-aboutme-1.jpg)
 ![Mobile screenshot about me 2](site-images/mobile-screenshot-aboutme-2.jpg)
 ![Mobile screenshot about me 3](site-images/mobile-screenshot-aboutme-3.jpg)
-
