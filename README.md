@@ -30,7 +30,7 @@ I have added an About Me page where I have included further information about my
 - [X] Different styles for active, hover and focus states.
 - [ ] Include JavaScript to add some dynamic elements to your site. (Extra tricky!)
 
-I included hover state on the Skills and Project cards on the Home page and also on the About Me page to hightlight the information.
+I included hover state on the Skills and Project cards on the Home page and also on the About Me page to highlight the information.
 ​
 ### Screenshots
 
