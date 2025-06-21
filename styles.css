@@ -78,7 +78,7 @@ html,
 body {
     font-family: "Space Mono", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: weight;
     font-style: normal;
 }
 

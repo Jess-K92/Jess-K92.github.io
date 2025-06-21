@@ -3,15 +3,24 @@
 ​
 [My portfolio site](https://jess-k92.github.io/index.html)
 ​
+## About
+
+Personal Portfolio - created as part of She Codes Australia Plus Program, 2025.
+
 ## Project Requirements
 
 ### Content
  Add a short paragraph describing the features below. What aesthetic and technical choices did you make? 
 - [X] At least one profile picture
-- [X] Biography (at least 100 words)
+There is a profile picutre of myself placed on the header of the site. This remains there on the second page as well.
+- [X] Biography (at least 100 words).
+There is a 100 word bio on the home page that gives a general description of who I am and things that I like to do. I further added to this on the second page titled, About Me, where I have incldued more detail about myself and my experience.
 - [X] Functional Contact Form
+The contact form at the bottom of the home page is functional. To amke the form work I have used Formspree.
 - [X] "Projects" section
+There is a projects section where I have linked my GitHub repository for the She Codes First Website that we build as an example during out HTML and CSS course. I do not currrently have other projects to link here but have included teo placeholders in the meantime and will endevour to link further projects as I complete them in the She Codes Plus course.
 - [X] Links to external sites, e.g. GitHub and LinkedIn.
+You will find working URL links to my GitHub and LinkedIn in the footer of the site.
 ​
 ### Technical
  Add a short paragraph describing the features below. What strategies or design decisions did you work from? 
@@ -47,8 +56,8 @@ I included hover state on the Skills and Project cards on the Home page and also
 ![Desktop screenshot homepage 2](site-images/desktop-screenshot-2.jpg)
 ![Desktop screenshot about me 1](site-images/desktop-screenshot-aboutme-1.jpg)
 ![Desktop screenshot about me 2](site-images/desktop-screenshot-aboutme-2.jpg)
-![Desktop hover skills]()
-![Desktop hover sproejcts]()
+![Desktop hover skills](site-images/hover-screenshot-skills.jpg)
+![Desktop hover sproejcts](site-images/hover-screenshot-projects.jpg)
 
 ####  Mobile Screenshots
 ![Mobile screenshot homepage 1](site-images/mobile-screenshot-1.jpg)
