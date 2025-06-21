@@ -30,7 +30,7 @@ I have added an About Me page where I have included further information about my
 - [X] Different styles for active, hover and focus states.
 - [ ] Include JavaScript to add some dynamic elements to your site. (Extra tricky!)
 
-I included hover state on the Skills and Project cards on the Home page and also on the About Me page to highlight the information.
+I included hover state on the Skills and Project cards on the Home page and also on the About Me page to highlight the information. I also added in a functional hamburger menu. 
 ​
 ### Screenshots
 
@@ -60,3 +60,7 @@ I included hover state on the Skills and Project cards on the Home page and also
 ![Mobile screenshot about me 1](site-images/mobile-screenshot-aboutme-1.jpg)
 ![Mobile screenshot about me 2](site-images/mobile-screenshot-aboutme-2.jpg)
 ![Mobile screenshot about me 3](site-images/mobile-screenshot-aboutme-3.jpg)
+
+####  Mobile Hamburger Menu Screenshots
+![Hamburger Menu screenshot closed](site-images/hamburger-menu-toggle-closed.jpg)
+![Hamburger Menu screenshot open](site-images/hamburger-menu-toggle-open.jpg)

@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    
     <header>
         <img src="images/jk pic.jpeg" alt="Jessica Keating Profile Picture" class="logo" />
 
@@ -94,13 +95,16 @@
         <section class="contact" id="Contact">
             <h2>Get in Touch</h2>
             <form action="https://formspree.io/f/xkgbzlnn" method="POST" class="contact-form">
-                <input type="hidden" name="_subject" value="New message from portfolio site">
+                <input type="hidden" name="_subject" value="New message from portfolio site" />
 
-                <label>Your Name:</label><input type="text" name="your-name" required />
+                <label for="your-name">Your Name:</label>
+                <input type="text" id="your-name" name="your-name" required />
 
-                <label>Your Email:<input type="email" name="email"></label>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required />
 
-                <label>Your Message:<textarea name="message"></textarea></label>
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
 
                 <button type="submit">Send</button>
             </form>
@@ -117,6 +121,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>
