@@ -123,24 +123,24 @@ h5 {}
 
 h6 {}
 
-
-
 /* style to make style guide */
+
 body {
     padding: 20px;
 }
 
-.colors {
+/* .colors {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
+} */
 
-.colors div {
+/* .colors div {
     width: 100px;
     height: 100px;
-}
+} */
 
+/* brand colours */
 .brand {
     background-color: var(--brand);
 }
@@ -184,6 +184,13 @@ body {
     padding: 20px;
 }
 
+
+
+
+
+
+
+
 /* Header */
 header {
     background-color: var(--base-darker);
@@ -194,30 +201,39 @@ header {
 .header-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
+/*Sets logo/profile pic size and shape start */
 .logo {
     height: 100px;
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    object-fit: cover;
+    /*     object-fit: cover; */
     display: block;
+    margin: auto;
 }
 
+/*Sets logo/profile pic size and shape end */
+
+/* Menu titles colour, size, hover, hover colour start */
 nav a {
     color: white;
     margin-left: 20px;
     text-decoration: none;
     font-weight: bold;
+    Display: flex;
+
 }
 
 nav a:hover {
     color: var(--base-mid);
 }
 
-/* Sections */
+/* Menu titles colour, size, hover, hover colour end */
+
+/* Sections start */
 section {
     margin: 40px 0;
 }
@@ -228,7 +244,9 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Grid Layout */
+/* Sections End */
+
+/* Grid Layout - Skills and Projects start */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -257,15 +275,6 @@ h2 {
     border-radius: 8px;
 }
 
-
-/* .card {
-  background-color: var(--base-lighter);
-  padding: 20px;
-  text-align: center;
-  border-radius: 8px;
-  transition: 0.3s;
-} */
-
 .card:hover {
     background-color: var(--base-mid);
     color: white;
@@ -276,13 +285,9 @@ h2 {
     margin-bottom: 10px;
 }
 
-/* .card img {
-  width: 80px;
-  height: auto;
-  margin-bottom: 10px;
-} */
+/* Grid Layout - Skills and Projects end */
 
-/* Contact Form */
+/* Contact form start */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -301,14 +306,7 @@ h2 {
     padding: 10px;
     border: 1px solid var(--base-dark);
     border-radius: 4px;
-}
-
-.contact-form input,
-.contact-form textarea {
     width: 100%;
-    padding: 10px;
-    border: 1px solid var(--base-dark);
-    border-radius: 5px;
     font-size: 1rem;
 }
 
@@ -340,7 +338,10 @@ h2 {
     background-color: var(--brand-alt);
 }
 
-/* Footer */
+/* Contact form end */
+
+/* Footer start */
+
 footer {
     background-color: var(--base-darker);
     color: white;
@@ -353,68 +354,19 @@ footer {
     align-items: center;
 }
 
+footer p {
+    font-size: 15px;
+}
+
 footer img {
-    width: 30px;
+    width: 40px;
     margin-left: 10px;
 }
 
-/* SMALL SCREENS: Phones (up to 700px) */
-@media (max-width: 600px) {
-
-    header,
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .grid {
-        grid-template-columns: 1fr;
-        /* Stack cards vertically */
-    }
-
-
-    /* .logo {
-    height: 40px;
-    margin-bottom: 10px;
-  } */
-
-    .contact-form {
-        width: 100%;
-    }
-
-    body {
-        padding: 10px;
-    }
-
-    h1,
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    .card {
-        padding: 15px;
-    }
-}
+/* Footer end */
 
 /* MEDIUM SCREENS: Tablets (min 700px) */
 @media (min-width: 700px) {
-    .grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-
-    nav a {
-        margin-left: 10px;
-    }
-
-    .header-container {
-        flex-direction: column;
-        gap: 10px;
-    }
 
     .grid {
         display: grid;
@@ -426,4 +378,17 @@ footer img {
         margin: 0 auto;
     }
 
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        /* adds space between menu items */
+        padding: 0;
+        margin: 0;
+    }
+
+    nav li {
+        display: block;
+        /* no need for inline-block when using flex */
+    }
 }
